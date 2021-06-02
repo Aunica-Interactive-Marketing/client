@@ -117,12 +117,6 @@ customData = {
   },
   user: {
     id: '',
-    id_usuario: '',
-  },
-  page: {
-    cliente: ''.
-    step: '',
-    fluxo: ''
   }
 }
 </script>
@@ -267,7 +261,7 @@ dataLayer.push({
 
 <br />
 
-#### Geração de proposta - Transação
+#### - Transação
 
 <p style='text-align: justify;'>É necessário a implementação de um dataLayer.push com o objetivo de mensurar o número de serviços contratados. Importante que o método descrito seja disparado no retorno da solicitação:</p>
 
@@ -275,37 +269,21 @@ dataLayer.push({
 <script>
 dataLayer = window.dataLayer || [];
 dataLayer.push({
-    event: 'transmissao',
-    doc: '',
-    origem: '',
-    numero_proposta: '',
-    cartao_porto: '',
-    versao_proposta: '',
-    paymentMethod: '',
-    id_oferta: '',
-    retorno:  '',
-    descricao: '',
-    ecommerce: {
-        purchase: {
-            actionField: {
-                id: '',             //id da transação
-                revenue: 0.00,
-            },
-            products: [{
-              id: '',
-              name: '',
-              brand: '',
-              valor_premio,
-              valor_franquia,
-            }]
-        }
-    },
-    erro: {
-        codigo: '',
-        servico: ''
-    }
+  event: 'lead-porto',
+  id_lead: '',
+  num_sinistro: '',
+  data_sinistro: '',
+  valor_sinistro: '',
+  natureza: '',
+  retorno: '',
+  descricao: '',
+      erro: {
+           codigo: '',
+           servico: '',
+           mensagem: ''
+      }
 });
-</script>
+
 
 
 
@@ -313,87 +291,16 @@ dataLayer.push({
 
 | Atributo  | Descrição de preenchimento  | Exemplo |
 | :-------- | :-------------------------- | :------ | 
-| doc          | Deve retornar o numero da doc | "56565656" e etc |
-| origem          | Deve retornar a origem  | "auto 2.0" ou "antigo""|
-| numero_proposta         | Deve retornar o numero da proposta| "35656456" e etc|
-| cartao_proposta      | Deve retornar o cartao | "visa", "mastercard", "nao-contratado" |
-| versao_proposta      | numero da versao da proposta | "5444646" e etc |
-| paymentMethod      |  "metodo de pagamento" | "cartao-de-credito" e etc |
-| id_oferta      | Deve retornar o id da oferta | "454646" e etc |
-| retorno      | Deve indicar o sucesso ou erro da tentativa da solicitação de serviço | "sucesso" ou "erro" |
-| descricao    | Deve trazer a descrição do retorno | "proposta-realizada-com-sucesso" e etc |
-| ecommerce.purchase.actionField.id  |  TS+Protocolo | "dd/mm/yyyy-hh:mm:ss:protocolo de transmição" |
-| ecommerce.purchase.actionField.revenue  | Elemento deve informar o valor total da transação | "236.00" e etc |
-| ID da oferta  | Retornar o id da oferta | “321” e etc |
-| ecommerce.purchase.products[x].name  | Deve trazer o nome do plano | “plano123" e etc |
-| ecommerce.purchase.products[x].brand  | Marca do plano | “porto seguro" e etc |
-| ecommerce.purchase.products[x].valor_premio  | Deve trazer o valor do premio | “0.00" e etc |
-| ecommerce.purchase.products[x].valor_franquia  | Valor total da franquia | “0.00" e etc |
+| id_lead          | Deve retornar o id do lead | "sjfijs656" e etc |
+| num_sinistro          | Deve retornar o numero do sinistro  | "656565655" e etc|
+| data_sinistro         | Deve retornar a datra do sinistro| "02/06/2021" e etc|
+| valor_sintro      | Deve retornar o valor do sinistro | "100.00" e etc |
+| natureza      | Deve retornar a natureza do sinistro | "outras-naturezas e etc" e etc |
 | codigo       | Deve trazer o código do erro | "124 e etc |
 | servico      | Deve trazer qual serviço foi acionado  | "cobranca" e etc |
 | mensagem    | Deve trazer a descrição do erro | "dados-invalidos" e etc |
 
 <br />
-
-
-#### Resultado consulta
-
-
-<p style='text-align: justify;'>Chamada criada para ser disparada sempre que for resultado de alguma busca.</p>
-
-```html
-<script>
-dataLayer.push({
-    event: 'resultado_consulta',
-    nome_servico: '',
-    tipo_busca: '',
-    susep: '',
-    cliente: '',
-    data_calculo: '', 
-    data_inicio_vigencia: '',
-    placa: '',
-    num_item: '',
-    sucursal: '',
-    apolice: '',
-    cancelamento: '',
-    tipo_seguro: '',
-    situacao: '',
-    status_expiracao: '',
-    retorno: '',
-    descricao: '',
-    erro: {
-        codigo: '',
-        servico: ''
-    }
-});
-</script>
-
-
-```
-
-| Atributo  | Descrição de preenchimento  | Exemplo |
-| :-------- | :-------------------------- | :------ | 
-| nome_servico | Deve indicar o nome do serviço que será realizado | "localizar-documentos" e etc|
-| tipo_busca | Deve retornar o tipo de busca | "inclusao-de-item", "substituicao-de-veiculo-ou-alteracao-apolice" e etc |
-| susep        | Deve indicar o susep preenchida nos formularios | "CJO1" e etc |
-| cliente      | Deve retornar o nome do cliente | "segurado", "novo-cliente" e etc |
-| data_calculo          | Deve retornar a data do calculo | "22/04/21" e etc |
-| data_inicio_vigencia          | Deve retornar a data de vigência | "28/04/21" e etc|
-| placa          | "placa criptografada"| "jsdosodkoskd6565"|
-| num_item      | Deve retornar o nome numero do item | "5454545" e etc |
-| sucursal      | "Deve retornar a sucursal" | "sucursal" e etc |
-| apolice      | Deve retornar o numero da apolice| "4545454545" e etc |
-| cancelamento      | Deve retornar o cancelamento| "apolice" ou "item" ou "apolice-item"  |
-| tipo_seguro      | Deve trazer o tipo de seguro selecionado no campo| "n-cia", "n-documento" e etc|
-| situacao      | Deve retornar a situação | "calculado, "pendente", "recusado" e etc  |
-| status_expiracao      | Deve retornar o status da expiração | "prazo-expirado", "tarifa-expirada" e etc |
-| retorno      | Deve indicar o sucesso ou erro da tentativa da solicitação de serviço | "sucesso" ou "erro" |
-| descricao    | Deve trazer a descrição do retorno | "proposta-realizada-com-sucesso" e etc |
-| codigo       | Deve trazer o código do erro | "124 e etc |
-| servico      | Deve trazer qual serviço foi acionado  | "cobranca" e etc |
-| mensagem    | Deve trazer a descrição do erro | "dados-invalidos" e etc |
-
-###
 
 
 #### Erros
@@ -419,47 +326,7 @@ dataLayer.push({
 
 <br />
 
-#### Evento para lista de ofertas
 
-É necessário a implementação de um dataLayer.push com o objetivo de mensurar compra após a exibição dos produtos. Importante que o método descrito seja disparado após os produtos serem exibidos ao usuário
-
-```html
-<script>
-dataLayer.push({
-  event: 'lista_ofertas',
-  produto: [{
-    id: '',
-    name: '',
-    brand: '',
-    list: '',
-    valor_premio,
-    valor_franquia,
-    position: '',
-   },
-   {
-    id: '',
-    name: '',
-    brand: '',
-    list: '',
-    valor_premio,
-    valor_franquia,
-    position: '',
-  }]
-});
-</script>
-```
-
-| Atributo  | Descrição de preenchimento  | Exemplo |
-| :-------- | :-------------------------- | :------ | 
-| id  | Deve trazer o código SKU do produto | "123" e etc |
-| name  | Deve trazer o nome do plano  | "plano123" e etc |
-| brand  | Deve trazer marca do plano | “azul”,”itau”,”porto-seguro” |
-| list  | Deve trazer a qual lista a oferta pertenc| "ofertas-principais" e etc |
-| valor_premio  | Valor total do prêmio| "0.00" e etc |
-| valor_franquia  | Valor total da franquia | "0.00" e etc |
-| position  | Deve trazer a posição da oferta | "1" e etc |
-
-<br />
 
 ---
 
@@ -715,6 +582,135 @@ dataLayer.push({
 
 <br />
 
+### Endereço
+
+![Endereço](https://aunica-interactive-marketing.github.io/client/prints/endereco.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "endereco:[[opcao-selecionada]]"
+ >
+</div>
+```
+
+| Variavel  |  Descrição  | Exemplo |
+| :-------- | :---------- | :------ | 
+| [[opcao-selecionada]]  | Deve retornar a opção selecionada | "1", "2" e etc |
+
+
+<br />
+
+### Objeto
+
+![Objeto](https://aunica-interactive-marketing.github.io/client/prints/objeto.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "objeto:[[opcao-selecionada]]"
+ >
+</div>
+```
+
+| Variavel  |  Descrição  | Exemplo |
+| :-------- | :---------- | :------ | 
+| [[opcao-selecionada]]  | Deve retornar a opção selecionada | "1", "2" e etc |
+
+
+<br />
+
+### Natureza
+
+![Natureza](https://aunica-interactive-marketing.github.io/client/prints/natureza-sinistro.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "natureza-sinistro:[[opcao-selecionada]]"
+ >
+</div>
+```
+
+| Variavel  |  Descrição  | Exemplo |
+| :-------- | :---------- | :------ | 
+| [[opcao-selecionada]]  | Deve retornar a opção selecionada | "1", "2" e etc |
+
+
+<br />
+
+### Cobertura
+
+![Natureza](https://aunica-interactive-marketing.github.io/client/prints/natureza-sinistro.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "cobertura:[[opcao-selecionada]]"
+ >
+</div>
+```
+
+| Variavel  |  Descrição  | Exemplo |
+| :-------- | :---------- | :------ | 
+| [[opcao-selecionada]]  | Deve retornar a opção selecionada | "1", "2" e etc |
+
+
+<br />
+
+### Relato
+
+![Relato](https://aunica-interactive-marketing.github.io/client/prints/relato.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "relato-ocorrido"
+ >
+</div>
+```
+
+
+<br />
+
+### Valor prejuizo
+
+![Valor](https://aunica-interactive-marketing.github.io/client/prints/valor.png?raw=true)
+
+
+- **Ao escolher uma opção no menu**<br />
+
+```html
+<!-- Use se os atributos no elemento a ser clicado -->
+<div 
+  data-gtm-type="text"
+  data-gtm-name= "valor-prejuizo"
+ >
+</div>
+```
+
+
+<br />
 
 
 > Em caso de dúvidas, estamos a disposição.
