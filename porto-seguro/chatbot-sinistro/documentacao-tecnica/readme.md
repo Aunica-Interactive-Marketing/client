@@ -439,7 +439,7 @@ dataLayer.push({
 
 ### Você ainda esta digitando data futura
 
-![Hora](https://aunica-interactive-marketing.github.io/client/prints/voce-ainda-esta-digitando.png?raw=true)
+![Hora](https://aunica-interactive-marketing.github.io/client/prints/ainda-esta-digitando.png?raw=true)
 
 - **No preenchimento do campo de data futura**<br />
 
