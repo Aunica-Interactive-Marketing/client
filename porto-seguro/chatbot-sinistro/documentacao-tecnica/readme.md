@@ -5,7 +5,7 @@
 
 <br />
 
-## Guia de estruturação HTML para tagueamento - Chatbot Sinistro
+## Guia de estruturação para tagueamento - Chatbot Sinistro
 
 > Última atualização: 04/06/2021 <br />
 
