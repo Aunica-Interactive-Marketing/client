@@ -7,7 +7,7 @@
 
 ## Guia de estruturação HTML para tagueamento - Chatbot Sinistro
 
-> Última atualização: 02/06/2021 <br />
+> Última atualização: 04/06/2021 <br />
 
 <br />
 
@@ -116,7 +116,18 @@ customData = {
     portal: ''
   },
   user: {
+    id: ''
+  },
+  flux: {
     id: '',
+    name: 'avisar-sinistro'
+  },
+  sinister: {
+    product: '',
+    number_protocol: '',
+    nature: '',
+    covers: '',
+    price: ''
   }
 }
 </script>
@@ -130,7 +141,15 @@ customData = {
 | customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “ChatBot Sinistro”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
 | customData.user.id  | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
+| customData.flux.id  | Deve indicar o ID do fluxo  | Texto | ""| "1", "2" e etc|
+| customData.flux.name  | Deve indicar o nome do fluxo| Texto | ""| "avisar-sinistro"|
+| customData.sinister.product  | Deve indicar o produto do sinistro | Texto | ""| "aviso-de-sinistro"|
+| customData.sinister.number_protocol  | Deve indicar o numero de protocolo | Texto | ""| "6565656565" e etc|
+| customData.sinister.natureza  | Deve indicar a natureaza do sinistro | Texto | ""| "outras-naturezas" e etc|
+| customData.sinister.covers  | Deve indicar a cobertura | Texto | ""| ""|
+| customData.sinister.price  | Deve indicar o valor  | Texto | ""| "199.90" e etc|
 
+**obs: Referente aos atributos do fluxo e sinistro, eles devem ser zerados ao iniciar um novo atendimento ou ao sair do atendimento**
 
 <br />
 
@@ -261,7 +280,7 @@ dataLayer.push({
 
 <br />
 
-#### - Transação
+#### - Solicitação de Serviço para o Aviso de sinistro
 
 <p style='text-align: justify;'>É necessário a implementação de um dataLayer.push com o objetivo de mensurar o número de serviços contratados. Importante que o método descrito seja disparado no retorno da solicitação:</p>
 
@@ -269,9 +288,11 @@ dataLayer.push({
 <script>
 dataLayer = window.dataLayer || [];
 dataLayer.push({
-  event: 'lead-porto',
-  id_lead: '',
-  num_sinistro: '',
+  event: 'solicitacao_servico',
+  nome_servico: 'aviso-de-sinistro',
+  tipo_servico: 'gerar-aviso-de-sintro',
+  numero_procolo: '',
+  numero_sinistro: '',
   data_sinistro: '',
   valor_sinistro: '',
   natureza: '',
@@ -291,8 +312,8 @@ dataLayer.push({
 
 | Atributo  | Descrição de preenchimento  | Exemplo |
 | :-------- | :-------------------------- | :------ | 
-| id_lead          | Deve retornar o id do lead | "sjfijs656" e etc |
-| num_sinistro          | Deve retornar o numero do sinistro  | "656565655" e etc|
+| numero_protocolo | Deve indicar o numero de protocolo  | "656565655" e etc|
+| numero_sinistro          | Deve retornar o numero do sinistro  | "5484845" e etc|
 | data_sinistro         | Deve retornar a datra do sinistro| "02/06/2021" e etc|
 | valor_sintro      | Deve retornar o valor do sinistro | "100.00" e etc |
 | natureza      | Deve retornar a natureza do sinistro | "outras-naturezas e etc" e etc |
