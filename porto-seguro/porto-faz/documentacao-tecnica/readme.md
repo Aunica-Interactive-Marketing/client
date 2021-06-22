@@ -125,17 +125,18 @@ customData = {
 </script>
 ```
 
+
 | Atributo  | Descrição de preenchimento  | Tipo de dado | Valor padrão | Exemplo |
 | :-------- | :-------------------------- | :----------- | :----------- | :------ |
-| customData.site  | Objeto destinado a armazenar informações sobre o site que está sendo acessado. | Objeto | ""| |
-| customData.site.brand  | Deve indicar qual a marca do site. | Texto | ""| “portoseguro”|
-| customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
-| customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “Porto Faz”|
-| customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
-| customData.user.id  | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
-| customData.page  | Objeto destinado a armazenar informações sobre a página que está sendo acessada. | Objeto | ""| |
-| customData.page.name  | Deve retornar o nome descritivo da pagina | Texto | ""| “home”, "conserto-e-manutencao" e etc|
-customData.page.name
+| customData.site | Objeto destinado a armazenar informações sobre o site que está sendo acessado. | Objeto | ""| |
+| customData.site.brand | Deve indicar qual a marca do site. | Texto | ""| “portoseguro”|
+| customData.site.versao | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
+| customData.site.portal | Deve indicar qual o tipo de produto. | Texto | ""| “Porto Faz”|
+| customData.user | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
+| customData.user.id | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
+| customData.page | Objeto destinado a armazenar informações sobre a página que está sendo acessada. | Objeto | ""| |
+| customData.page.name  | Deve retornar o nome descritivo da pagina | Texto | ""| “home”, "conserto-e-manutencao" e etc |
+
 
 
 <br />
