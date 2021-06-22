@@ -1,4 +1,4 @@
-![aunica](https://implementacaoaunica.github.io/client/aunica.jpg?raw=true)
+![aunica](https://aunica-interactive-marketing.github.io/client/aunica.jpg?raw=true)
 
 > Área - Digital Analytics<br />
 > Documento de Especificação Técnica
@@ -217,27 +217,6 @@ Caso exista a necessidade de especificar ainda mais o elemento que foi clicado �
 
 ### Eventos Padrões
 
-#### Visualizações de página
-
-<p style='text-align: justify;'>Em aplicações Ajax, Angular, React, Vue e demais onde a página não é recarregada durante o passo a passo, há a necessidade de um push no objeto dataLayer com as seguintes informações preenchidas:</p>
-
-```html
-<script>
-dataLayer = window.dataLayer || [];
-dataLayer.push({
-  event: 'step_change',
-      etapa: '',
-      titulo ''
-})
-</script>
-```
-
-| Atributo  | Descrição de preenchimento  | Exemplo |
-| :-------- | :-------------------------- | :------ | 
-| etapa     | Deve retornar a etapa correspondente | "/localizar-documentos" e etc |
-| titulo     | Deve retornar o nome da pagina | "proposta", "orcamento" e etc |
-
-<br />
 
 #### Visualização de modal
 
@@ -326,7 +305,7 @@ dataLayer.push({
 
 ### Cookies
 
-![cookies](https://implementacaoaunica.github.io/client/prints/cookies.png?raw=true)
+![cookies](https://aunica-interactive-marketing.github.io/client/prints/cookies.png?raw=true)
 
 
 - **No clique dos links ou botões referente aos cookies**<br />
@@ -352,7 +331,7 @@ dataLayer.push({
 
 ### Home 
 
-![home](https://implementacaoaunica.github.io/client/prints/home.png?raw=true)
+![home](https://aunica-interactive-marketing.github.io/client/prints/home.png?raw=true)
 
 
 - **No clique dos itens do menu**<br />
@@ -425,8 +404,8 @@ dataLayer.push({
 
 <br />
 
-![continuacao-home](https://implementacaoaunica.github.io/client/prints/continuacao-home.png?raw=true)
-![final](https://implementacaoaunica.github.io/client/prints/final.png?raw=true)
+![continuacao-home](https://aunica-interactive-marketing.github.io/client/prints/continuacao-home.png?raw=true)
+![final](https://aunica-interactive-marketing.github.io/client/prints/final.png?raw=true)
 
 - **No clique dos botões das seções**<br />
 
@@ -468,7 +447,7 @@ dataLayer.push({
 
 ### Home - Menu lateral
 
-![menu-lateral](https://implementacaoaunica.github.io/client/prints/menu-lateral.png?raw=true)
+![menu-lateral](https://aunica-interactive-marketing.github.io/client/prints/menu-lateral.png?raw=true)
 
 - **No clique dos itens do menu lateral**<br />
 
@@ -492,15 +471,15 @@ dataLayer.push({
 
 ### Categorias
 
-![limpeza](https://implementacaoaunica.github.io/client/prints/limpeza.png?raw=true)
-![conserto](https://implementacaoaunica.github.io/client/prints/conserto.png?raw=true)
-![instalacao](https://implementacaoaunica.github.io/client/prints/instalacao.png?raw=true)
-![eletricista](https://implementacaoaunica.github.io/client/prints/eletricista.png?raw=true)
-![encanador](https://implementacaoaunica.github.io/client/prints/encanador.png?raw=true)
-![automacao](https://implementacaoaunica.github.io/client/prints/automacao.png?raw=true)
-![manutencao](https://implementacaoaunica.github.io/client/prints/manutencao.png?raw=true)
-![carro](https://implementacaoaunica.github.io/client/prints/carro.png?raw=true)
-![chaveiro](https://implementacaoaunica.github.io/client/prints/chaveiro.png?raw=true)
+![limpeza](https://aunica-interactive-marketing.github.io/client/prints/limpeza.png?raw=true)
+![conserto](https://aunica-interactive-marketing.github.io/client/prints/conserto.png?raw=true)
+![instalacao](https://aunica-interactive-marketing.github.io/client/prints/instalacao.png?raw=true)
+![eletricista](https://aunica-interactive-marketing.github.io/client/prints/eletricista.png?raw=true)
+![encanador](https://aunica-interactive-marketing.github.io/client/prints/encanador.png?raw=true)
+![automacao](https://aunica-interactive-marketing.github.io/client/prints/automacao.png?raw=true)
+![manutencao](https://aunica-interactive-marketing.github.io/client/prints/manutencao.png?raw=true)
+![carro](https://aunica-interactive-marketing.github.io/client/prints/carro.png?raw=true)
+![chaveiro](https://aunica-interactive-marketing.github.io/client/prints/chaveiro.png?raw=true)
 
 
 - **No clique dos links em seções nas páginas das categorias**<br />
