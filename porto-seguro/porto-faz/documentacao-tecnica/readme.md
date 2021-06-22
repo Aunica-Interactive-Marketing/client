@@ -379,6 +379,7 @@ dataLayer.push({
   data-gtm-clicktype="card"
   data-gtm-name="[[nome-card]]"
   data-gtm-subname="servicos-porto-faz"
+  >
 </div>
 ```
 
@@ -396,6 +397,7 @@ dataLayer.push({
   data-gtm-clicktype="link"
   data-gtm-name="[[nome-link]]"
   data-gtm-subname="servicos-porto-faz"
+  >
 </div>
 ```
 
@@ -416,6 +418,7 @@ dataLayer.push({
   data-gtm-clicktype="button"
   data-gtm-name="[[nome-button]]"
   data-gtm-subname="[[nome-secao]]"
+  >
 </div>
 ```
 
@@ -458,6 +461,7 @@ dataLayer.push({
   data-gtm-clicktype="menu-lateral"
   data-gtm-name="[[nome-menu]]"
   data-gtm-subname="[[nome-submenu]]"
+  >
 </div>
 ```
 
@@ -491,6 +495,7 @@ dataLayer.push({
   data-gtm-clicktype="link"
   data-gtm-name="[[nome-link]]"
   data-gtm-subname="[[secao]]:categoria:[[nome-categoria]]"
+  >
 </div>
 ```
 
