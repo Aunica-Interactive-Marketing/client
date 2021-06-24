@@ -122,8 +122,8 @@ customData = {
  },
  produto: {
     origem: '',
- 		 id: '',
-		  name: '',
+    id: '',
+    name: '',
     price: '',
     execPrice: '',
     discountPrice: '',
