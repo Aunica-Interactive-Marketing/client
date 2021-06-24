@@ -138,7 +138,7 @@ customData = {
 | customData.user.id | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
 | customData.page | Objeto destinado a armazenar informações sobre a página que está sendo acessada. | Objeto | ""| |
 | customData.page.name  | Deve retornar o nome descritivo da pagina | Texto | ""| “home”, "conserto-e-manutencao" e etc |
-| customData.produto.origem  | Deve retornar o nome da página que usuário veio | Texto | ""| "menu-lateral, "categoria-subcategoria", "promocao" etc e etc |
+| customData.produto.origem  | Deve retornar de onde o usuário veio | Texto | ""| "menu-lateral, "categoria-subcategoria", "promocao" etc e etc |
 
 
 
