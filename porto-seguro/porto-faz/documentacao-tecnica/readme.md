@@ -122,6 +122,14 @@ customData = {
  },
  produto: {
     origem: '',
+ 		 id: '',
+		  name: '',
+    price: '',
+    execPrice: '',
+    discountPrice: '',
+    category: '',
+    tipo: '',
+    tipo_veiculo: '',
   },
 }
 </script>
@@ -138,7 +146,16 @@ customData = {
 | customData.user.id | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
 | customData.page | Objeto destinado a armazenar informações sobre a página que está sendo acessada. | Objeto | ""| |
 | customData.page.name  | Deve retornar o nome descritivo da pagina | Texto | ""| “home”, "conserto-e-manutencao" e etc |
-| customData.produto.origem  | Deve retornar de onde o usuário veio | Texto | ""| "menu-lateral, "categoria-subcategoria", "promocao" etc e etc |
+| customData.produto | Objeto destinado a armazenar dados do atendimento. | Objeto | ""| |
+| customData.produto.origem  | Deve retornar de onde o usuário veio | Texto | ""| "menu-lateral, "categoria-subcategoria", "promocao" e etc |
+| customData.produto.id  | Deve trazer o código/id do nome do produto | Texto | ""| “123456” |
+| customData.produto.name  | Serviço selecionado | Texto | ""| “limpeza-de-sofa” etc |
+| customData.produto.price  | Preço do serviço escolhido | Texto | ""| "179.90" e etc |
+| customData.produto.execPrice  | Preço de execução do serviço escolhido | Texto | ""| "20.00" etc |
+| customData.produto.discountPrice  |Preço com desconto do serviço escolhido | Texto | ""| "149.90" e etc |
+| customData.produto.category  | Categoria do serviço solicitado | Texto | ""| “geladeira”, “microondas” |
+| customData.produto.tipo  | Tipo do serviço selecionado | Texto | ""| “servicos”, “servicos-casa” |
+| customData.produto.tipo_veiculo  | Tipo do veículo para qual foi solicitado o serviço | Texto | ""| “leve”, “moto-ate-300-CC” |
 
 
 
