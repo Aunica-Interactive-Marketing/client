@@ -7,7 +7,7 @@
 
 ## Guia de estruturação para tagueamento - Chatbot PortoNet
 
-> Última atualização: 24/06/2021 <br />
+> Última atualização: 25/06/2021 <br />
 
 <br />
 
@@ -126,20 +126,14 @@ customData = {
 | customData.site  | Objeto destinado a armazenar informações sobre a página/site que está sendo acessada. | Objeto | ""| |
 | customData.site.brand  | Deve indicar qual a marca do site. | Texto | ""| “portos-eguro”, "azul-seguros|
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
-| customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “ChatBot Sinistro”|
+| customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “ChatBot PortoNet”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
 | customData.user.id  | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
 | customData.user.user_id  | CPF do cliente criptografado utilizando o padrão já aplicado em outros ambientes. (Após o usuário ser identificado) [https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| "kjdad54656564"|
 | customData.user.matricula | Deve indicar o numero da matricula do funcionario | Texto | ""| "065666669898"|
 | customData.flux.id  | Deve indicar o ID do fluxo  | Texto | ""| "1", "2" e etc|
 | customData.flux.name  | Deve indicar o nome do fluxo| Texto | ""| "cliente", "funcionario"|
-| customData.sinister.product  | Deve indicar o produto do sinistro | Texto | ""| "aviso-de-sinistro"|
-| customData.sinister.number_protocol  | Deve indicar o numero de protocolo | Texto | ""| "6565656565" e etc|
-| customData.sinister.natureza  | Deve indicar a natureaza do sinistro | Texto | ""| "outras-naturezas" e etc|
-| customData.sinister.covers  | Deve indicar a cobertura | Texto | ""| ""|
-| customData.sinister.price  | Deve indicar o valor  | Texto | ""| "199.90" e etc|
 
-**obs: Referente aos atributos do fluxo e sinistro, eles devem ser zerados ao iniciar um novo atendimento ou ao sair do atendimento**
 
 <br />
 
