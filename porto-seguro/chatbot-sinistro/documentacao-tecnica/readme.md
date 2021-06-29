@@ -106,7 +106,8 @@ customData = {
   site: {
     brand: '',
     versao: '',
-    portal: ''
+    portal: '',
+    product: 're'
   },
   user: {
     id: ''
@@ -131,7 +132,8 @@ customData = {
 | customData.site  | Objeto destinado a armazenar informações sobre a página/site que está sendo acessada. | Objeto | ""| |
 | customData.site.brand  | Deve indicar qual a marca do site. | Texto | ""| “portoseguro”|
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
-| customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “ChatBot Sinistro”|
+| customData.site.portal  | Deve indicar o nome do portal | Texto | ""| “ChatBot Sinistro”|
+| customData.site.product  | Deve indicar qual o tipo de produto. | Texto | ""| “re”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
 | customData.user.id  | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
 | customData.flux.id  | Deve indicar o ID do fluxo  | Texto | ""| "1", "2" e etc|
