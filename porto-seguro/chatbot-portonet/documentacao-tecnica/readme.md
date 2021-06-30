@@ -7,7 +7,7 @@
 
 ## Guia de estruturação para tagueamento - Chatbot PortoNet
 
-> Última atualização: 29/06/2021 <br />
+> Última atualização: 30/06/2021 <br />
 
 <br />
 
@@ -127,7 +127,7 @@ customData = {
 | customData.site  | Objeto destinado a armazenar informações sobre a página/site que está sendo acessada. | Objeto | ""| |
 | customData.site.brand  | Deve indicar qual a marca do site. | Texto | ""| “portos-eguro”, "azul-seguros|
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
-| customData.site.portal  | Deve indicar qual o nome do portal | Texto | ""| “ChatBot PortoNet”|
+| customData.site.portal  | Deve indicar qual o nome do portal | Texto | ""| “ChatBot”|
 | customData.site.product  | Deve indicar qual o tipo do produto | Texto | ""| “financiamento”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
 | customData.user.id  | Deve indicar o ID de usuário que a plataforma atribui. | Texto | ""| "ABC123"|
