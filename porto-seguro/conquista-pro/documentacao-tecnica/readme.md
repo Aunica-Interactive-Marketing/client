@@ -337,21 +337,6 @@ https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai?utm_source=corretor-
 
 
 
-
-
-- Trazer a URL parametrizada no “Corretor Online”.
-
-
-https://corretor.portoseguro.com.br/corretoronline/?utm_source=corretor-online&utm_medium=site&utm_campaign=acesse-o-pro
-
-
-
-![conquista](https://aunica-interactive-marketing.github.io/client/prints/conquista-pro.png?raw=true)
-
-
-
-
-
 ---
 
 > Em caso de dúvidas, estamos a disposição.
