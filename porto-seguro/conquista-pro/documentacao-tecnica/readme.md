@@ -286,8 +286,8 @@ dataLayer.push({
 
 | Atributo  | Descrição de preenchimento  | Exemplo |
 | :-------- | :-------------------------- | :------ | 
-| nome_servico | Deve indicar o nome do serviço que será realizado | "proposta", "orcamento" e etc |
-| tipo_servico | Deve indicar qual o tipo de serviço que está sendo solicitado | "salvar-orcamento" e etc |
+| nome_servico | Deve indicar o nome do serviço que será realizado | "login  e etc |
+| tipo_servico | Deve indicar qual o tipo de serviço que está sendo solicitado | "entrar" e etc |
 | produto        | Deve indicar o nome do produto | "previdencia" e etc |
 | retorno      | Deve indicar o sucesso ou erro da tentativa da solicitação de serviço | "sucesso" ou "erro" |
 | descricao    | Deve trazer a descrição do retorno | "login-efetuado-com-sucesso" e etc |
