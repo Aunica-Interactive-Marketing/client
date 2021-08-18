@@ -327,7 +327,8 @@ dataLayer.push({
 
 - Retornar a URL quando o usuário entra no site do Conquista Pro através do site Corretor Online. 
 
-https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai?origem=corretor-online
+https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai&utm_source=corretor-online&utm_medium=site&utm_campaign=corretor-online
+
 
 
 
@@ -341,7 +342,8 @@ https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai?origem=corretor-onli
 - Trazer a URL parametrizada no “Corretor Online”.
 
 
-https://corretor.portoseguro.com.br/corretoronline/?origem=conquista-pro
+https://corretor.portoseguro.com.br/corretoronline/&utm_source=conquista-pro&utm_medium=site&utm_campaign=conquista-pro
+
 
 
 ![conquista](https://aunica-interactive-marketing.github.io/client/prints/conquista-pro.png?raw=true)
