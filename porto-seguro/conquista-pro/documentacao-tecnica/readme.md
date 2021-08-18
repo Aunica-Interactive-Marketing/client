@@ -132,10 +132,10 @@ customData = {
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
 | customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “conquista pro”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
-| customData.user.id_usuario  | CPF Criptografado  AESCryptography (Utilizada nos ambientes porto e azul) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
+| customData.user.id_usuario  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
 | customData.user.tipo_usuario  | Deve indicar a classificação do usuário em sua conta PortoSeguro | Texto| ""| “corretor”, “agente-autonomo-de-investimento"|
 | customData.produto  | Objeto destinado a descrever as informações do produto| Objeto | ""| |
-| customData.produto.nome_produtp  | Deve indicar o nome do produto | Texto| ""| “previdencia", "consorcio-de-veiculo" e etc|
+| customData.produto.nome_produto  | Deve indicar o nome do produto | Texto| ""| “previdencia", "consorcio-de-veiculo" e etc|
 
 <br />
 
