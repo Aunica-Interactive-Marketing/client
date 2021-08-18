@@ -326,19 +326,18 @@ dataLayer.push({
 Retornar a URL quando o usuário entra no site do Conquista Pro através do site Corretor Online. 
 
 
-![Col](https://aunica-interactive-marketing.github.io/client/prints/parametrizacao-col.png.PNG?raw=true)
+![Col](https://aunica-interactive-marketing.github.io/client/prints/parametrizacao-col.png?raw=true)
 
 
 https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai?origem=corretor-online
 
 
-- Manual
 
 
-As URL’s devem conter o parâmetro origem e seu valor deve ser portoprintweb
+Trazer a URL parametrizada no “Corretor Online”.
 
 
-![conquista](https://aunica-interactive-marketing.github.io/client/prints/conquista-pro.PNG?raw=true)
+![conquista](https://aunica-interactive-marketing.github.io/client/prints/conquista-pro.png?raw=true)
 
 
 https://corretor.portoseguro.com.br/corretoronline/?origem=conquista-pro
