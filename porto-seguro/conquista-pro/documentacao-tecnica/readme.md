@@ -23,7 +23,6 @@
 - [Atributo data-gtm-name](#atributo-data-gtm-name)
 - [Atributo data-gtm-subname](#atributo-data-gtm-subname)
 - [Eventos Padrões](#eventos-padr&otilde;es)
-- [Exemplos práticos](#exemplos-pr&aacute;ticos)
 - [Parametrização](#parametriza&ccedil;&atilde;o)
 
 
