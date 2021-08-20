@@ -115,7 +115,7 @@ customData = {
     portal: ''
   },
   user: {
-    id_usuario: '',
+    id_cliente: '',
     id_conquista_cliente: '',
     tipo_usuario: '',
   }
@@ -130,8 +130,8 @@ customData = {
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
 | customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “conquista pro”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
-| customData.user.id_usuario  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
-| customData.user.id_conquista_cliente  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
+| customData.user.id_cliente  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
+| customData.user.id_conquista  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
 | customData.user.tipo_usuario  | Deve indicar a classificação do usuário em sua conta PortoSeguro | Texto| ""| “corretor”, “agente-autonomo-de-investimento"|
 
 <br />
@@ -269,6 +269,7 @@ dataLayer.push({
     nome_servico: '',
     tipo_servico: '',
     produto: '',
+    id_cliente: '',
     retorno: '',
     descricao: '',
     erro: {
@@ -286,6 +287,7 @@ dataLayer.push({
 | nome_servico | Deve indicar o nome do serviço que será realizado | "login  e etc |
 | tipo_servico | Deve indicar qual o tipo de serviço que está sendo solicitado | "entrar" e etc |
 | produto        | Deve indicar o nome do produto | "previdencia" e etc |
+| id_cliente  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
 | retorno      | Deve indicar o sucesso ou erro da tentativa da solicitação de serviço | "sucesso" ou "erro" |
 | descricao    | Deve trazer a descrição do retorno | "login-efetuado-com-sucesso" e etc |
 | codigo       | Deve trazer o código do erro | "124 e etc |
