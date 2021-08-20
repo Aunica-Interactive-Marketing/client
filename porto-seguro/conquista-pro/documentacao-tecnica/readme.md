@@ -7,7 +7,7 @@
 
 ## Guia de estruturação HTML para tagueamento - Conquista PRO
 
-> Última atualização: 18/08/2021 <br />
+> Última atualização: 20/08/2021 <br />
 
 <br />
 
@@ -118,9 +118,6 @@ customData = {
     id_usuario: '',
     id_conquista: '',
     tipo_usuario: '',
-  },
-  produto: {
-    nome_produto: ''.
   }
 }
 </script>
@@ -136,8 +133,6 @@ customData = {
 | customData.user.id_usuario  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
 | customData.user.id_conquista  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
 | customData.user.tipo_usuario  | Deve indicar a classificação do usuário em sua conta PortoSeguro | Texto| ""| “corretor”, “agente-autonomo-de-investimento"|
-| customData.produto  | Objeto destinado a descrever as informações do produto| Objeto | ""| |
-| customData.produto.nome_produto  | Deve indicar o nome do produto | Texto| ""| “previdencia", "consorcio-de-veiculo" e etc|
 
 <br />
 
