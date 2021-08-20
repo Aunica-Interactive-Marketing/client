@@ -116,7 +116,7 @@ customData = {
   },
   user: {
     id_usuario: '',
-    id_conquista: '',
+    id_conquista_cliente: '',
     tipo_usuario: '',
   }
 }
@@ -131,7 +131,7 @@ customData = {
 | customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “conquista pro”|
 | customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
 | customData.user.id_usuario  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
-| customData.user.id_conquista  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
+| customData.user.id_conquista_cliente  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
 | customData.user.tipo_usuario  | Deve indicar a classificação do usuário em sua conta PortoSeguro | Texto| ""| “corretor”, “agente-autonomo-de-investimento"|
 
 <br />
