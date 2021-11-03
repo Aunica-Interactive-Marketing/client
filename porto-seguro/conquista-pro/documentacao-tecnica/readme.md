@@ -7,7 +7,7 @@
 
 ## Guia de estruturação HTML para tagueamento - Conquista PRO
 
-> Última atualização: 20/08/2021 <br />
+> Última atualização: 03/11/2021 <br />
 
 <br />
 
@@ -23,7 +23,7 @@
 - [Atributo data-gtm-name](#atributo-data-gtm-name)
 - [Atributo data-gtm-subname](#atributo-data-gtm-subname)
 - [Eventos Padrões](#eventos-padr&otilde;es)
-- [Parametrização](#parametriza&ccedil;&atilde;o)
+
 
 
 
@@ -245,7 +245,9 @@ dataLayer = window.dataLayer || [];
 dataLayer.push({
   event: 'modal',
   nome: '',
-  acao: ''
+  acao: '',
+  categoria: '', // para o modal de noticia
+  data_publicacao: '' // para o modal de noticia
 })
 </script>
 ```
@@ -254,6 +256,8 @@ dataLayer.push({
 | :-------- | :-------------------------- | :------ | 
 | nome      | Deve retornar o nome do modal | /conquista-pro/login/cpf e etc |
 | acao      | Deve retornar a ação do usuário com o modal | "abrir" ou "fechar" |
+| categoria     | Deve retornar a categoria da noticia | "imoveis" |
+| data_publicacao    | Deve retornar a data de publicacao da noticia | "15-12-2020" |
 
 <br />
 
@@ -297,6 +301,43 @@ dataLayer.push({
 <br />
 
 
+
+#### Resultado Consulta
+
+<p style='text-align: justify;'>Chamada criada para ser disparada sempre que algum dos serviços for solicitado pelo usuário.</p>
+
+```html
+<script>
+dataLayer.push({
+    event: 'resultado_consulta',
+    nome_servico: '',
+    tipo_busca: '',
+    retorno: '',
+    descricao: '',
+    erro: {
+        codigo: '',
+        servico: ''
+    }
+});
+</script>
+
+
+```
+
+| Atributo  | Descrição de preenchimento  | Exemplo |
+| :-------- | :-------------------------- | :------ | 
+| nome_servico | Deve indicar o nome do serviço que será realizado | "perfil"  e etc |
+| tipo_busca| Deve retornar o tipo de busca | "buscar" e etc |
+| retorno      | Deve indicar o sucesso ou erro da tentativa da solicitação de serviço | "sucesso" ou "erro" |
+| descricao    | Deve trazer a descrição do retorno | "login-efetuado-com-sucesso" e etc |
+| codigo       | Deve trazer o código do erro | "124 e etc |
+| servico      | Deve trazer qual serviço foi acionado  | "login-api" e etc |
+| mensagem    | Deve trazer a descrição do erro | "dados-invalidos" e etc |
+
+<br />
+
+
+
 #### Erros
 
 <p style='text-align: justify;'>Apesar de termos a indicação de erro nos eventos que representam as KPI’s, precisamos mapear todos os retornos de erro do sistema que são exibidos para o usuário. Por isso, caso o erro exibido não corresponda ao retorno dos eventos listados acima, é necessário a implementação do dataLayer.push descrito abaixo:</p>
@@ -319,20 +360,6 @@ dataLayer.push({
 | mensagem  | Deve trazer a descrição do erro | "dados-invalidos" e etc |
 
 <br />
-
-### Parametrização
-
-- Retornar a URL quando o usuário entra no site do Conquista Pro através do site Corretor Online. 
-
-https://wwws.portoseguro.com.br/parceiroportoparfront/#/aai?utm_source=corretor-online&utm_medium=site&utm_campaign=corretor-online
-
-
-
-
-![Col](https://aunica-interactive-marketing.github.io/client/prints/parametrizacao-col.png?raw=true)
-
-
-
 
 ---
 
