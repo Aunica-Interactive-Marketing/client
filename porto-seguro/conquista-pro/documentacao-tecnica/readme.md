@@ -7,7 +7,7 @@
 
 ## Guia de estruturação HTML para tagueamento - Conquista PRO
 
-> Última atualização: 03/11/2021 <br />
+> Última atualização: 10/11/2021 <br />
 
 <br />
 
@@ -114,10 +114,16 @@ customData = {
     versao: '',
     portal: ''
   },
+    selecionado: {
+    id_usuario: '',
+    id_aai: '',
+    susep: '',
+    perfil: '',
   user: {
-    id_cliente: '',
-    id_conquista_cliente: '',
-    tipo_usuario: '',
+    id_usuario: '',
+    id_aai: '',
+    susep: '',
+    perfil: '',
   }
 }
 </script>
@@ -129,10 +135,17 @@ customData = {
 | customData.site.brand  | Deve indicar qual a marca do site. | Texto | ""| “portoseguro”|
 | customData.site.versao  | Deve indicar qual variação/versão do site o usuário está acessando. | Texto | ""| “1.2”|
 | customData.site.portal  | Deve indicar qual o tipo de produto. | Texto | ""| “conquista pro”|
-| customData.user  | Objeto destinado a descrever as informações do usuário. O objeto deve ser trazido quando o usuário estiver identificado.| Objeto | ""| |
-| customData.user.id_cliente  | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) | Texto | ""| “a750c220a060fcf487f9519d3203035b”|
-| customData.user.id_conquista  | Deve indicar o id na plataforma do conquista | Texto| ""| “123" e etc|
-| customData.user.tipo_usuario  | Deve indicar a classificação do usuário em sua conta PortoSeguro | Texto| ""| “corretor”, “agente-autonomo-de-investimento"|
+| customData.selecionado  | Objeto destinado a armazenar informações sobre o usuario selecionado | Objeto | ""| ||
+| customData.selecionado.id_usuario | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) do usuario selecionado| Texto | ""| “a750c220a060fcf487f9519d3203035b”|
+| customData.selecionado.id_aai | Deve indicar o id do selecioando na plataforma do conquista | Texto| ""| “123" e etc|
+| customData.selecionado.susep | Deve indicar a susep do selecionado | Texto| ""| “A6665" e etc|
+| customData.selecionado.perfil | Deve indicar o perfil do selecionado | Texto| ""| “corretor”, “agente-autonomo-de-investimento” e etc|
+| customData.user  | Objeto destinado a armazenar informações sobre o usuario | Objeto | ""| ||
+| customData.user.id_usuario | CPF Criptografado  AESCryptography [Utilizada nos ambientes porto e azul](https://docs.google.com/document/d/1OXUxPWIHjis-nY0GdUgxjT_Zh8uSrZRHVo6atV86b9Y/edit) do usuario| Texto | ""| “a750c220a060fcf487f9519d3203035b”|
+| customData.user.id_aai | Deve indicar o id do usuario na plataforma do conquista | Texto| ""| “123" e etc|
+| customData.user.susep | Deve indicar a susep do usuario | Texto| ""| “A7775" e etc|
+| customData.user.perfil | Deve indicar o perfil do selecionado | Texto| ""| “corretor”, “agente-autonomo-de-investimento” e etc|
+
 
 <br />
 
